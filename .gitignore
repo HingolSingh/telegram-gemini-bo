@@ -1,0 +1,30 @@
+with open(".gitignore", "w") as f:
+    f.write("""
+# Bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment
+.env
+.env.*
+
+# SQLite, logs
+*.sqlite3
+*.log
+*.db
+
+# VSCode & Replit
+.vscode/
+.replit
+*.swp
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Virtual env
+venv/
+    """)
+print(".gitignore created successfully.")
